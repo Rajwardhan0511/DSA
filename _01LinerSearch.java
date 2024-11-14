@@ -8,7 +8,7 @@ public class _01LinerSearch {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 3, 2, 6, 4, 7, 8, 3 };
+        int arr[] = { 3, 2, 6, 4, 7, 8, 1 };
         int target = 8;
         int result = linerSearch(arr, target);
         if (result != -1) {

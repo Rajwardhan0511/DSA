@@ -15,7 +15,7 @@ public class _03BinarySearchRecursion {
         return -1;
     }
     public static void main(String[] args){
-        int arr[] = { 3, 2, 6, 4, 7, 8, 3 };
+        int arr[] = { 3, 2, 6, 4, 7, 8, 1 };
         int target = 8;
         int left = 0;
         int right = arr.length-1;
