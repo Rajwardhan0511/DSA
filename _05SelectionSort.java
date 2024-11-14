@@ -1,13 +1,15 @@
-public class _04BubbleSort {
-    private static int[] bubbleSort(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+public class _05SelectionSort {
+    private static int[] selectionSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[min] > arr[j]){
+                    min = j;
                 }
             }
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
         }
         return arr;
     }
@@ -19,7 +21,7 @@ public class _04BubbleSort {
             System.out.print(a + " ");
         }
 
-        int result[] = bubbleSort(arr);
+        int result[] = selectionSort(arr);
 
         System.out.println("\nAfter Sorting:");
         for (int a : result) {
