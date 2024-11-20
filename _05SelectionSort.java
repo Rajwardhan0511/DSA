@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class _05SelectionSort {
     private static int[] selectionSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
@@ -15,7 +17,15 @@ public class _05SelectionSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 3, 2, 6, 4, 7, 8, 1 };
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of Elements: ");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0; i<n; i++){
+            System.out.print("Enter element at index "+i+": ");
+            arr[i] = sc.nextInt();
+        }
+
         System.out.println("Before Sorting:");
         for (int a : arr) {
             System.out.print(a + " ");
@@ -27,5 +37,7 @@ public class _05SelectionSort {
         for (int a : result) {
             System.out.print(a + " ");
         }
+
+        sc.close();
     }
 }

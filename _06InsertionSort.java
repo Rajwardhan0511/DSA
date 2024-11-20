@@ -35,5 +35,7 @@ public class _06InsertionSort {
         for (int a : result) {
             System.out.print(a + " ");
         }
+
+        sc.close();
     }
 }

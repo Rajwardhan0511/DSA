@@ -34,7 +34,7 @@ public class _07QuickSort {
             System.out.print("Enter element at index "+i+": ");
             arr[i] = sc.nextInt();
         }
-        
+
         System.out.println("Before Sorting:");
         for (int a : arr) {
             System.out.print(a + " ");
@@ -46,5 +46,7 @@ public class _07QuickSort {
         for (int a : arr) {
             System.out.print(a + " ");
         }
+
+        sc.close();
     }
 }
